@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Current room</title>
+    <!-- css style  -->
+    <link rel="stylesheet" href="/css/main.css" />
+    <link rel="stylesheet" href="/css/normalize.css" />
+    <link rel="stylesheet" href="/css/fontawesome.css" />
+    <link rel="stylesheet" href="/css/all.min.css" />
+    <link rel="stylesheet" href="/css/current-room.css" />
+    <!-- firebase scripts  -->
+    <script src="https://www.gstatic.com/firebasejs/10.8.0/firebase-app-compat.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/10.8.0/firebase-firestore-compat.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/10.8.0/firebase-auth-compat.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/10.8.0/firebase-storage-compat.js"></script>
+  </head>
+  <body>
+    <div class="container" class="current_room">
+      <h2>Current room</h2>
+      <div id="room-data" class="my-booking">
+        <div>
+          <h2>Room Number :</h2>
+          <span id="room-number"></span>
+        </div>
+        <div>
+          <p>Floor number :</p>
+          <span id="floor-number"></span>
+        </div>
+        <div>
+          <p>number of beds :</p>
+          <span id="bed-count"></span>
+        </div>
+        <div>
+          <p>price :</p>
+          <span id="room-price"></span>
+        </div>
+        <div>
+          <p>Description :</p>
+          <span id="room-description"></span>
+        </div>
+        <div>
+          <button onclick="checkout()" class="warning">Check out</button>
+        </div>
+      </div>
+    </div>
+    <script src="js/main.js"></script>
+    <script src="js/current-room.js"></script>
+  </body>
+</html>

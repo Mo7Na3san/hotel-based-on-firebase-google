@@ -1,0 +1,82 @@
+@import url(/css/main.css);
+.add-room {
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  gap: 10px;
+  flex-direction: column;
+  border: 1px solid var(--btnBackgroun);
+  border-radius: 20px;
+  background-color: var(--dark2);
+  padding: 20px;
+  -webkit-border-radius: 20px;
+  -moz-border-radius: 20px;
+  -ms-border-radius: 20px;
+  -o-border-radius: 20px;
+  margin: 10px 0;
+}
+.add-room > div {
+  display: flex;
+  gap: 6px;
+  width: 100%;
+  justify-content: space-between;
+  align-items: center;
+  background-color: var(--dark1);
+  align-items: initial;
+  padding: 10px 10px;
+  border-radius: 10px;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  -o-border-radius: 10px;
+}
+.add-room div input,
+.add-room div select {
+  background-color: var(--dark1);
+  padding: 5px 10px;
+  border-radius: 5px;
+  background-color: var(--dark2);
+  color: var(--btnBackgroun);
+  font-weight: bold;
+  border: 0;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -ms-border-radius: 5px;
+  -o-border-radius: 5px;
+  outline: none;
+  transform: translateY(1.5px);
+  -webkit-transform: translateY(1.5px);
+  -moz-transform: translateY(1.5px);
+  -ms-transform: translateY(1.5px);
+  -o-transform: translateY(1.5px);
+}
+.add-room div input {
+  width: 100px;
+}
+.add-room div:last-child {
+  justify-content: center;
+  align-items: center;
+  background-color: var(--dark2);
+}
+.add-room div:last-child button {
+  width: 50%;
+}
+
+.room-description {
+  display: flex;
+  flex-direction: column;
+}
+.room-description textarea {
+  background-color: var(--dark2);
+  padding: 15px;
+  outline: none;
+  border: 0;
+  color: var(--btnBackgroun);
+  height: 150px;
+  resize: none;
+  border-radius: 10px;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  -o-border-radius: 10px;
+}

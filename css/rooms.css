@@ -1,0 +1,50 @@
+@import url("/css/main.css");
+.rooms-title {
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  flex-direction: row;
+  gap: 12px;
+}
+.rooms-title .plusBtn {
+  color: var(--btnBackgroun);
+  cursor: pointer;
+}
+.room-card {
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  gap: 10px;
+  flex-direction: column;
+  border: 1px solid var(--btnBackgroun);
+  border-radius: 20px;
+  background-color: var(--dark2);
+  padding: 20px;
+  -webkit-border-radius: 20px;
+  -moz-border-radius: 20px;
+  -ms-border-radius: 20px;
+  -o-border-radius: 20px;
+  margin: 10px 0;
+}
+.room-card > div {
+  display: flex;
+  gap: 6px;
+  justify-content: center;
+  align-items: center;
+}
+.room-card div span {
+  background-color: var(--dark1);
+  padding: 5px 5px;
+  border-radius: 5px;
+  color: var(--btnBackgroun);
+  font-weight: bold;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -ms-border-radius: 5px;
+  -o-border-radius: 5px;
+  transform: translateY(1.5px);
+  -webkit-transform: translateY(1.5px);
+  -moz-transform: translateY(1.5px);
+  -ms-transform: translateY(1.5px);
+  -o-transform: translateY(1.5px);
+}

@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Rooms list</title>
+    <!-- css style  -->
+    <link rel="stylesheet" href="/css/main.css" />
+    <link rel="stylesheet" href="/css/normalize.css" />
+    <link rel="stylesheet" href="/css/all.min.css" />
+    <link rel="stylesheet" href="/css/fontawesome.css" />
+    <link rel="stylesheet" href="/css/fontawesome.min.css" />
+    <link rel="stylesheet" href="/css/all.css" />
+    <link rel="stylesheet" href="/css/rooms.css" />
+    <!-- firebase scripts  -->
+    <script src="https://www.gstatic.com/firebasejs/10.8.0/firebase-app-compat.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/10.8.0/firebase-firestore-compat.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/10.8.0/firebase-auth-compat.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/10.8.0/firebase-storage-compat.js"></script>
+  </head>
+  <body>
+    <div class="container">
+      <div class="rooms" id="rooms">
+        <h1 class="rooms-title">
+          List of rooms
+          <a href="/admin/add-room.html"
+            ><i class="fa-solid fa-circle-plus plusBtn"></i>
+          </a>
+        </h1>
+        <div id="rooms-container"></div>
+      </div>
+    </div>
+    <script src="/js/main.js"></script>
+    <script src="/js/rooms.js"></script>
+  </body>
+</html>

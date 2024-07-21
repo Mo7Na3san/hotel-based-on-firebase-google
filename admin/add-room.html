@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Add room</title>
+    <!-- css style  -->
+    <link rel="stylesheet" href="/css/main.css" />
+    <link rel="stylesheet" href="/css/fontawesome.css" />
+    <link rel="stylesheet" href="/css/normalize.css" />
+    <link rel="stylesheet" href="/css/all.min.css" />
+    <link rel="stylesheet" href="/css/add-room.css" />
+    <!-- firebase scripts  -->
+    <script src="https://www.gstatic.com/firebasejs/10.8.0/firebase-app-compat.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/10.8.0/firebase-firestore-compat.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/10.8.0/firebase-auth-compat.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/10.8.0/firebase-storage-compat.js"></script>
+  </head>
+  <body>
+    <div class="container">
+      <h1>add room</h1>
+      <div class="add-room">
+        <div>
+          <h2>Room Number :</h2>
+          <input id="room-number" type="number" />
+        </div>
+        <div>
+          <h3>Floor number :</h3>
+          <input id="floor-number" type="number" />
+        </div>
+        <div>
+          <h3>number of beds :</h3>
+          <input id="bed-count" type="number" />
+        </div>
+        <div>
+          <h3>price :</h3>
+          <input id="room-price" type="number" />
+        </div>
+        <div class="room-description">
+          <h3>Description :</h3>
+          <textarea
+            name=""
+            id="room-description"
+            cols="30"
+            rows="10"
+          ></textarea>
+        </div>
+        <!-- <div>
+          <h3>current user :</h3>
+          <select name="users" id="usersList">
+            <option class="option" value="Mohammad">Mohammad</option>
+          </select>
+        </div> -->
+        <div>
+          <button onclick="addRoom()" class="primary">Add</button>
+        </div>
+      </div>
+    </div>
+    <script src="/js/main.js"></script>
+    <script src="/js/add-room.js"></script>
+  </body>
+</html>

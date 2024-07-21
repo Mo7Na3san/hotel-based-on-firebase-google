@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- css style  -->
+    <link rel="stylesheet" href="/css/normalize.css" />
+    <link rel="stylesheet" href="/css/normalize.css" />
+    <link rel="stylesheet" href="/css/all.min.css" />
+    <link rel="stylesheet" href="/css/main.css" />
+    <link rel="stylesheet" href="/css/signup.css" />
+    <!-- Google font  -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- firebase scripts  -->
+    <script src="https://www.gstatic.com/firebasejs/10.8.0/firebase-app-compat.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/10.8.0/firebase-firestore-compat.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/10.8.0/firebase-auth-compat.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/10.8.0/firebase-storage-compat.js"></script>
+    <title>Create account</title>
+  </head>
+  <body>
+    <div class="container">
+      <div id="phone-section" class="form">
+        <h1>Sign up</h1>
+        <input
+          id="phone"
+          type="text"
+          placeholder="0500000000"
+          for="login-btn"
+        />
+        <input
+          class="otpBtn"
+          id="otp"
+          type="text"
+          placeholder="otp"
+          for="verify"
+        />
+        <!-- <textarea name="" id="" cols="30" rows="10"></textarea> -->
+        <div id="recaptcha-container"></div>
+        <button id="login-btn" onclick="login()">continue</button>
+        <button id="verify-btn" onclick="verify()" class="verifyBtn">
+          verify
+        </button>
+      </div>
+      <div id="profile-section" class="form">
+        <h1>Please fill here :</h1>
+        <input id="fullname" type="text" placeholder="Ahmad Muhsain" for="" />
+        <input class="" id="age" type="number" placeholder="18" for="" />
+        <button id="" class="primary" onclick="signup()">Sign up</button>
+        <button id="goToLogin" onclick="goToLogin()">Login now</button>
+      </div>
+    </div>
+    <script src="js/main.js"></script>
+    <script src="/js/signup.js"></script>
+  </body>
+</html>

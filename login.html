@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- css style  -->
+    <link rel="stylesheet" href="css/normalize.css" />
+    <link rel="stylesheet" href="css/fontawesome.css" />
+    <link rel="stylesheet" href="css/all.min.css" />
+    <link rel="stylesheet" href="css/main.css" />
+    <!-- firebase scripts  -->
+    <script src="https://www.gstatic.com/firebasejs/10.8.0/firebase-app-compat.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/10.8.0/firebase-firestore-compat.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/10.8.0/firebase-auth-compat.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/10.8.0/firebase-storage-compat.js"></script>
+    <title>Log in to wordlish</title>
+  </head>
+  <body>
+    <div class="container">
+      <div id="phone-section" class="form">
+        <h1>Log in to your account</h1>
+        <input
+          id="phone"
+          type="text"
+          placeholder="0500000000"
+          for="login-btn"
+        />
+        <input
+          class="otpBtn"
+          id="otp"
+          type="text"
+          placeholder="otp"
+          for="verify"
+        />
+        <!-- <textarea name="" id="" cols="30" rows="10"></textarea> -->
+        <div id="recaptcha-container"></div>
+        <button id="login-btn" class="primary" onclick="login()">
+          continue
+        </button>
+        <button id="verify-btn" onclick="verify()" class="verifyBtn">
+          verify
+        </button>
+      </div>
+    </div>
+    <script src="/js/main.js"></script>
+    <script src="/js/login.js"></script>
+  </body>
+</html>

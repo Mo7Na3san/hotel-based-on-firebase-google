@@ -1,0 +1,176 @@
+/* In this file : we have general setting & signup , login pages style  */
+:root {
+  --dark1: #202020;
+  --dark2: #343434;
+  --light1: rgb(195, 195, 195);
+  --btnBackgroun: rgb(0, 189, 126);
+  --btnDanger: red;
+  --btnWarning: rgb(255, 193, 0);
+  --inputColor: white;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+body,
+html {
+  padding: 0;
+  margin: 0;
+  background-color: var(--dark1);
+  color: var(--light1);
+  font-family: roboto, sans-serif;
+}
+.container {
+  padding: 0 15px;
+  margin: 10px auto;
+}
+
+@media (min-width: 768px) {
+  .container {
+    width: 750px;
+  }
+}
+
+@media (min-width: 992px) {
+  .container {
+    width: 970px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .container {
+    width: 1170px;
+  }
+}
+.container {
+  padding: 0;
+  margin: 0 auto;
+}
+
+a {
+  color: var(--link1);
+}
+#recaptcha-container > div {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  padding: 5px;
+  margin: 0;
+}
+.form {
+  padding: 5px;
+  border-radius: 2px;
+  -webkit-border-radius: 2px;
+  -moz-border-radius: 2px;
+  -ms-border-radius: 2px;
+  -o-border-radius: 2px;
+  background-color: var(--dark2);
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+.form input,
+.form textarea,
+.form button {
+  background-color: var(--dark2);
+  color: var(--inputColor);
+  border: none;
+  padding: 10px;
+  border-radius: 2px;
+  padding: 10px;
+  outline: none;
+  -webkit-border-radius: 2px;
+  -moz-border-radius: 2px;
+  -ms-border-radius: 2px;
+  -o-border-radius: 2px;
+  background-color: var(--dark1);
+}
+.form textarea {
+  resize: none;
+  height: 100px;
+}
+.form button {
+  background-color: var(--btnBackgroun);
+  font-weight: bold;
+  text-transform: uppercase;
+  cursor: pointer;
+}
+/* buttons setting  */
+.primary {
+  background-color: var(--btnBackgroun);
+  font-weight: bold;
+  text-transform: uppercase;
+  cursor: pointer;
+  font-weight: bold;
+  text-transform: uppercase;
+  cursor: pointer;
+  padding: 8px 12px;
+  color: var(--light1);
+  border: 0;
+  border-radius: 3px;
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  -ms-border-radius: 3px;
+  -o-border-radius: 3px;
+  font-size: 15px;
+}
+.warning {
+  background-color: var(--btnWarning);
+  font-weight: bold;
+  text-transform: uppercase;
+  cursor: pointer;
+  padding: 8px 12px;
+  color: var(--light1);
+  border: 0;
+  border-radius: 3px;
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  -ms-border-radius: 3px;
+  -o-border-radius: 3px;
+  font-size: 15px;
+}
+.danger {
+  background-color: var(--btnDanger);
+  font-weight: bold;
+  text-transform: uppercase;
+  cursor: pointer;
+  padding: 8px 12px;
+  color: var(--light1);
+  border: 0;
+  border-radius: 3px;
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  -ms-border-radius: 3px;
+  -o-border-radius: 3px;
+  font-size: 15px;
+}
+.otpBtn {
+  display: none;
+}
+
+.verifyBtn {
+  display: none;
+  background-color: var(--btnBackgroun);
+}
+
+/* index page  */
+
+.custom-nav {
+  background-color: var(--btnBackgroun);
+}
+.custom-nav ul a {
+  color: var(--light1);
+  font-size: 18px;
+}
+.custom-nav ul a:hover {
+  color: var(--dark1);
+}
